@@ -1,0 +1,173 @@
+body {
+    position: relative;
+}
+
+/*---Navigation bar---*/
+.navbar-default {
+    background: #680958;
+    border-bottom-color: #6c0570;
+//height: 10vh;
+}
+.navbar-header {
+//width: 100%;
+}
+.navbar-header .navbar-brand {
+//width: 100%;
+//padding: 35px 0px 0 100px;
+    letter-spacing: -0.03em;
+    font-size: 24px;
+//line-height: 0px;
+    font-style: Tahoma;
+    font-weight: 600;
+    font-variant: small-caps;
+    color: #d8d4d8;
+}
+.navbar-default .navbar-nav>li>a:hover { color: grey; }
+.navbar-default .navbar-brand:hover { color: grey; }
+.navbar-default .navbar-nav>li>a{
+    color: #d8d4d8;
+//padding: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color:transparent;
+    color:black;
+}
+@media screen and (min-width: 768px) {
+    .navbar-default {
+        height: 15vh;
+    //margin-bottom: 0;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-header .navbar-brand {
+        width: 100%;
+        padding: 35px 0px 0 100px;
+        letter-spacing: -0.03em;
+        font-size: 36px;
+        line-height: 0px;
+        font-style: Tahoma;
+        font-weight: 600;
+        font-variant: small-caps;
+        color: #d8d4d8;
+    }
+    .navbar-nav {
+        padding: 0px 0px 0px 75px;
+    }
+    .navbar-default .navbar-nav>li>a{
+        padding: 10px;
+    }
+}
+
+
+.thumbnailScreen {
+    min-height: 350px;
+}
+
+.textBox {
+//min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.textBox H1 {
+    letter-spacing: -0.03em;
+    font-size: 40px;
+    line-height: 0px;
+    font-style: Tahoma;
+    font-weight: 600;
+    font-variant: small-caps;
+    color: #680958;
+}
+
+hr {
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+    border-color: #680958;
+}
+
+#Home .cover2{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #Home .cover1{
+        display: none;
+    }
+    #Home .cover2{
+        display: block;
+    }
+
+    .thumbnailScreen {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profileImage img {
+        top: 10%;
+        transform: translateY(10%);
+    }
+
+    .contactImage img {
+    //position: absolute;
+        top: 50%;
+        transform: translateY(50%);
+    //transform: translateY(-80%);
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .thumbnailScreen {
+        min-height: 400px;
+    }
+}
+
+footer {
+    background: #9b6392;
+    color: #d8d4d8;
+//margin: 20px 0 0 0;
+}
+
+footer .tx {
+    color: #d8d4d8;
+    margin: 10px 0px 10px 0px;
+}
+
+a.btn-default { height: 44px;  width: 220px; text-align: left; margin: 0 5px 10px 0; position: relative; background-color: #f2f2f2; padding: 10px; transition: all .35s; padding: 0; line-height: 47px; overflow: hidden; }
+
+a.btn-default span { position: relative; z-index: 1; }
+a.twitter-btn span { padding-left: 40px; }
+a.github-btn span {  padding-left: 40px; }
+a.linkedin-btn span {  padding-left: 40px; }
+a.fcc-btn span {  padding-left: 30px; }
+
+a.btn-default i { display: block; float: left; position: absolute; top: 10px; font-size: 24px; color: #f2f2f2; position: relative; z-index: 1;  }
+a.twitter-btn i {  left: 12px; }
+a.github-btn i {  left: 15px; }
+a.linkedin-btn i {  left: 15px; }
+a.fcc-btn i {  left: 10px; }
+
+a.btn-default:after { content: ''; display: block; width: 50px; height: 50px; position: absolute; top: 0; left: 0; z-index: 0; transition: all .35s; }
+a.twitter-btn:after { background-color: #55ACEE; }
+a.github-btn:after { background-color: #171515; }
+a.linkedin-btn:after { background-color: #0077B5; }
+a.fcc-btn:after { background-color: #4B2B0D; }
+
+a.btn-default:hover, a.btn-default:focus { background-color: #f2f2f2; color: #f2f2f2; }
+a.btn-default:hover:after { width: 100%; }
+
+@media screen and (max-width: 500px) {
+    .profileImage img {
+        top: 50%;
+        transform: translateY(50%);
+    }
+
+    #Contact .contactImage {
+        visibility:hidden
+    }
+}

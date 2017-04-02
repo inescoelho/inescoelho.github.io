@@ -62,7 +62,7 @@ body {
     }
 }
 
-
+/*---SITE CONTENT---*/
 .thumbnailScreen {
     min-height: 350px;
 }
@@ -90,7 +90,7 @@ hr {
     border-color: #680958;
 }
 
-#Home .cover2{
+#Home .cover1{
     display: none;
 }
 
@@ -106,10 +106,10 @@ hr {
 
 @media screen and (min-width: 768px) {
     #Home .cover1{
-        display: none;
+        display: block;
     }
     #Home .cover2{
-        display: block;
+        display: none;
     }
 
     .thumbnailScreen {

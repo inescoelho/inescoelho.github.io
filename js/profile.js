@@ -1,19 +1,18 @@
 /**
- * Created by ines on 30-03-2017.
+ * Listen to scroll to change header opacity class
  */
+function checkScroll(){
+    var startY = $('.navbar').height() * 4; //The point where the navbar changes in px
 
-$(function() {
-    $("#navOption").click(function() {
-        // remove classes from all
-        $("li").removeClass("active");
-    });
-});
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("scrolled");
+    }else{
+        $('.navbar').removeClass("scrolled");
+    }
+}
 
-$(function() {
-    $("li").click(function() {
-        // remove classes from all
-        $("li").removeClass("active");
-        // add class to the one we clicked
-        $(this).addClass("active");
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
     });
-});
+}

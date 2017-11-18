@@ -12,6 +12,18 @@ body, html {
 p {
     line-height: 1.5;
 }
+hr {
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+    border-color: var(--main-color);
+}
+a {
+    color: var(--main-color);
+}
+a:hover {
+    color: var(--secondary-color);
+}
 
 /*NAVBAR*/
 .navbar-default {
@@ -159,7 +171,6 @@ header .header-text h1{
     padding-top: 50px;
     padding-bottom: 20px;
 }
-
 .textBox h1 {
     letter-spacing: -0.03em;
     font-size: 40px;
@@ -169,18 +180,13 @@ header .header-text h1{
     font-variant: small-caps;
     color: var(--main-color);
 }
-
-hr {
-    margin-left: auto;
-    margin-right: auto;
-    border-width: 3px;
-    border-color: var(--main-color);
-}
-a {
-    color: var(--main-color);
-}
-a:hover {
-    color: var(--secondary-color);
+@media (min-width: 768px) {
+    #About .vertical-align {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
 }
 
 /*PORTFOLIO*/

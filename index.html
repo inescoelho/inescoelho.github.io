@@ -99,9 +99,9 @@
                         <div class="col-sm-8">
                             <p>I'm a Biochemist and Software Developer, specialized in Software Engineer, from Portugal. Nowadays, I mostly work in Web Development.</p>
 
-                            <p>I support several initiatives to promote Diversity in Tech, Gender Equality and Women Empowerment. Currently, I'm an organizer of the <a href="https://teams.railsgirlssummerofcode.org/users/227">Rails Girls Summer of Code</a>, being an alumna of the 2015 edition and a supervisor of the 2016 and 2017 editions.</p>
+                            <p>I support several initiatives to promote Diversity in Tech, Gender Equality and Women Empowerment. Currently, I'm an organizer of the <a href="https://teams.railsgirlssummerofcode.org/users/227" target="_blank">Rails Girls Summer of Code</a>, being an alumna of the 2015 edition and a supervisor of the 2016 and 2017 editions.</p>
 
-                            <p>I’m a book lover, occasional writer and runner. I love furry animals and, for eight years, I've slaved to <a href="resources/gp.jpg">these cute guinea pigs.</a> The first time I’ve played Dungeons & Dragons, my character unleashed a plague that destroyed an entire continent. But don’t worry, now I only occasionally destroy a city. Some time ago, I was <a href="http://edition.cnn.com/2015/12/30/entertainment/carrie-fisher-star-wars-aging-response-twitter/index.html">featured on CNN</a>, alongside Carrie Fisher (scroll down a bit and you'll find me :P). By the way, Han shot first. And Firefly should be watched in the correct order.</p>
+                            <p>I’m a book lover, occasional writer and runner. I love furry animals and, for eight years, I've slaved to <a href="resources/gp.jpg" target="_blank">these cute guinea pigs.</a> The first time I’ve played Dungeons & Dragons, my character unleashed a plague that destroyed an entire continent. But don’t worry, now I only occasionally destroy a city. Some time ago, I was <a href="http://edition.cnn.com/2015/12/30/entertainment/carrie-fisher-star-wars-aging-response-twitter/index.html" target="_blank">featured on CNN</a>, alongside Carrie Fisher (scroll down a bit and you'll find me :P). By the way, Han shot first. And Firefly should be watched in the correct order.</p>
                         </div>
                         <div class="col-sm-4 col-sm-offset-0 col-xs-offset-3 col-xs-6">
                             <img src="resources/me.jpg" class="img-responsive" >
@@ -122,16 +122,15 @@
                     <h1>Portfolio</h1>
                     <hr />
      
-                    <div class="carousel-test">
-                      <div class='slider center'>
-
+                    <div id="portfolio-carousel">
+                        <div class='slider center'>
 
                             <div class="thumbnail">
                                 <a href="http://www.gowalksportugal.com/" target="_blank">
                                     <img src="resources/gw.jpg" alt="Go Walks" class="portfolioLink">
                                     <div class="caption">
                                         <h4 class="">Go Walks</h4>
-                                        <p class="">Portuguese walking tours website in Ruby on Rails</p>
+                                        <p class="">Walking tours company website in Ruby on Rails</p>
                                     </div>
                                 </a>
                             </div>
@@ -141,7 +140,7 @@
                                     <img src="resources/weather.jpg" alt="Local Weather" class="portfolioLink">
                                     <div class="caption">
                                         <h4 class="">Local Weather</h4>
-                                        <p class="">Presents local weather based on IP address</p>
+                                        <p class="">Local weather based on IP address</p>
                                     </div>
                                 </a>
                             </div>
@@ -161,7 +160,7 @@
                                     <img src="resources/tv.png" alt="Tv Series" class="portfolioLink">
                                     <div class="caption">
                                         <h4 class="">Tv Series</h4>
-                                        <p class="">IMDB TV Series Crawler</p>
+                                        <p class="">Ontology IMDB TV Series Crawler</p>
                                     </div>
                                 </a>
                             </div>
@@ -202,27 +201,52 @@
                     <h1>Talks</h1>
                     <hr />
 
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumbnailScreen">
-                        <div class="thumbnail">
-                            <a href="https://osseu17.sched.com/event/ByKR/bof-bringing-more-women-into-tech-one-summer-at-a-time-rgsoc-vaishali-thakkar-oracle-ines-coelho-securis" target="_blank">
-                                <img src="resources/oss.jpg" alt="Why we need more women in Tech" class="talksLink">
-                                <div class="caption">
-                                    <h4 class="">Bringing more women into tech - one summer at a time</h4>
-                                    <p class="">OSSummit 2017</p>
-                                </div>
-                            </a>
+                    <div id="talks-carousel">
+                        <div class='slider center'>
+                            <div class="thumbnail">
+                                <a href="https://osseu17.sched.com/event/ByKR/bof-bringing-more-women-into-tech-one-summer-at-a-time-rgsoc-vaishali-thakkar-oracle-ines-coelho-securis" target="_blank">
+                                    <img src="resources/oss.jpg" alt="Why we need more women in Tech">
+                                    <div class="caption">
+                                        <h4 class="">Bringing more women into tech - one summer at a time</h4>
+                                        <p class="">OSSummit 2017</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=YWbSmkC-kpY" target="_blank">
+                                    <img src="resources/wit.jpg" alt="Why we need more women in Tech">
+                                    <div class="caption">
+                                        <h4 class="">Why we need more women in Tech?</h4>
+                                        <p class="">PixelsCamp 2016</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4 col-xs-6 thumbnailScreen">
-                        <div class="thumbnail">
-                            <a href="https://www.youtube.com/watch?v=YWbSmkC-kpY" target="_blank">
-                                <img src="resources/wit.jpg" alt="Why we need more women in Tech" class="talksLink">
-                                <div class="caption">
-                                    <h4 class="">Why we need more women in Tech?</h4>
-                                    <p class="">PixelsCamp 2016</p>
-                                </div>
-                            </a>
+                    <div id="talks-list">
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumbnailScreen">
+                            <div class="thumbnail">
+                                <a href="https://osseu17.sched.com/event/ByKR/bof-bringing-more-women-into-tech-one-summer-at-a-time-rgsoc-vaishali-thakkar-oracle-ines-coelho-securis" target="_blank">
+                                    <img src="resources/oss.jpg" alt="Why we need more women in Tech" class="talksLink">
+                                    <div class="caption">
+                                        <h4 class="">Bringing more women into tech - one summer at a time</h4>
+                                        <p class="">OSSummit 2017</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-6 thumbnailScreen">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=YWbSmkC-kpY" target="_blank">
+                                    <img src="resources/wit.jpg" alt="Why we need more women in Tech" class="talksLink">
+                                    <div class="caption">
+                                        <h4 class="">Why we need more women in Tech?</h4>
+                                        <p class="">PixelsCamp 2016</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
 

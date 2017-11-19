@@ -189,12 +189,30 @@ header .header-text h1{
     }
 }
 
-/*PORTFOLIO*/
-.thumbnailScreen {
-   // min-height: 350px;
-   //max-width:300px;
+/*PORTFOLIO & PRESENTATIONS*/
+.slick-slide {
+  text-align: center;
 }
 
+#portfolio-carousel .thumbnail,
+#talks-carousel .thumbnail {
+    margin: 5px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: var(--main-color);
+}
+#talks-list {
+    display:none;
+}
+@media (min-width: 800px) {
+    #talks-carousel {
+        display:none;
+    }
+    #talks-list {
+    display:block;
+}
+}
 /*PUBLICATIONS*/
 #Publications li {
     padding-bottom: 16px;
@@ -247,45 +265,4 @@ footer {
 footer .tx {
     color: var(--text-color);
     margin: 10px 0px 10px 0px;
-}
-
-
-/* Control box 
------------------------------------------------- */
-.control-box {
-    width: 100%;
-    }
-    .carousel-control{
-        background: #666 !important;
-        border: 0px;
-        border-radius: 0px;
-        display: inline-block;
-        font-size: 34px;
-        font-weight: 200;
-        line-height: 18px;
-        opacity: 0.5;
-        padding: 4px 10px;
-        margin: 30px -20px 0;
-        height: 30px;
-        width: 30px;
-        }
-
-@media screen and (max-width: 576px) {
-    #myCarousel {
-        max-width: 350px;
-    }
-}
-
-.slick-slide {
-  text-align: center;
-  //color: #419be0;
-  //background: white;
-}
-
-.carousel-test .thumbnail {
-    margin: 5px;
-}
-
-.slick-prev:before, .slick-next:before {
-    color: var(--main-color);
 }

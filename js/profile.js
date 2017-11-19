@@ -17,7 +17,7 @@ if($('.navbar').length > 0){
     });
 }
 
-$('.center').slick({
+$('#portfolio-carousel .center').slick({
   centerMode: true,
   dots:true,
   centerPadding: '60px',
@@ -36,6 +36,24 @@ $('.center').slick({
       breakpoint: 550,
       settings: {
         arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+$('#talks-carousel .center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 2,
+  responsive: [
+    {
+      breakpoint: 550,
+      settings: {
+        arrows: true,
+        dots:true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1

@@ -17,29 +17,29 @@ if($('.navbar').length > 0){
     });
 }
 
-$('.responsive').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
+$('.center').slick({
+  centerMode: true,
+  dots:true,
+  centerPadding: '60px',
   slidesToShow: 3,
-  slidesToScroll: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 900,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 550,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });

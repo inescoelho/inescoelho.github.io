@@ -19,7 +19,7 @@ if($('.navbar').length > 0){
 
 $('#portfolio-carousel .center').slick({
   centerMode: true,
-  dots:true,
+  dots:false,
   centerPadding: '60px',
   slidesToShow: 3,
   responsive: [

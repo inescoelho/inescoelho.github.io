@@ -45,7 +45,7 @@ a:hover {
 }
 .navbar-default .navbar-header .navbar-toggle:hover,
 .navbar-default .navbar-header .navbar-toggle:focus { /*menu icon on hover/focus*/
-    background-color: var(--secondary-color);
+    background-color: var(white);
 }
 .navbar-default .navbar-header .navbar-toggle .icon-bar, /*menu bars*/
 .navbar-default .navbar-header .navbar-toggle:hover .icon-bar,
@@ -56,7 +56,7 @@ a:hover {
 .navbar-default .navbar-header .navbar-brand .navbar-brand-text:focus,
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  background-color: #D5B9B2;
+  background-color: white;
   color: var(--main-color);
 }
 .navbar-default .nav > li > a,
@@ -91,7 +91,14 @@ a:hover {
     .navbar-default .navbar-header .navbar-brand .navbar-brand-text:hover,
     .navbar-default .navbar-header .navbar-brand .navbar-brand-text:focus {
       background-color: white;
-      color: #333;
+      color: var(--text-color-dark);
+    }
+    .navbar.scrolled .nav > li > a:hover,
+    .navbar.scrolled .nav > li > a:focus:hover,
+    .navbar-default.scrolled .navbar-header .navbar-brand .navbar-brand-text:hover,
+    .navbar-default.scrolled .navbar-header .navbar-brand .navbar-brand-text:focus {
+      background-color: white;
+      color: var(--main-color);
     }
     .navbar.scrolled {
         background-color: var(--main-color);
@@ -103,7 +110,7 @@ a:hover {
     }
     .navbar.scrolled .nav > li > a:hover,
     .navbar.scrolled .nav > li > a:focus:hover {
-      background-color: #D5B9B2;
+      background-color: white;
       color: var(--main-color);
     }
     .navbar-header {
